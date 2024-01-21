@@ -1,0 +1,14 @@
+package travelog;
+
+import java.util.Scanner;
+
+public class DetailPage {
+	public static void showDetail(int boarNum) {
+		Scanner scan = new Scanner(System.in);
+		DB db = new DB();
+		int boardNum;
+        System.out.println("게시글 번호 " + boardNum + "의 내용을 출력합니다.");
+        db.detail(boardNum);
+    }
+	
+}
